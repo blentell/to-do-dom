@@ -7,6 +7,7 @@ const deletedItemsButton = document.querySelector("#showDeletedItems");
 const mainListButton = document.querySelector("#mainList");
 const hiddenList = document.querySelector("#listHidden");
 const hiddenListItems = document.querySelector("#listHiddenItems");
+const selectedItems = document.querySelector("#selectedItems");
 
 let count = 1;
 addButton.addEventListener("click", function () {
@@ -32,6 +33,8 @@ removeButton.addEventListener("click", function () {
 	const removeItem = document.querySelectorAll(".completed");
 	for (const item of removeItem) {
 		console.log("I should be doing things!");
+		item.style.textDecoration = "none";
+		item.style.background = "plum";
 		hiddenListItems.appendChild(item);
 	}
 });
@@ -51,3 +54,5 @@ mainListButton.addEventListener("click", function () {
 	hiddenList.style.display = "none";
 	newListItem.style.display = "flex";
 });
+
+selectedItems.addEventListener("click", function () {});
