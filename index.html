@@ -6,6 +6,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Honey Do List</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div id="main">
@@ -29,9 +53,20 @@
 					<button id="removeAllButton1">REMOVE ALL</button>
 				</div>
 			</div>
+			<div id="showDeleted">
+				<button id="showDeletedItems">Show Deleted Items</button>
+			</div>
 		</div>
 		<div id="list"></div>
-
+		<div id="listHidden">
+			<div id="button">
+				<button id="mainList">Main List</button>
+			</div>
+			<div id="title">
+				<h2 id="deletedStuff">Deleted Items</h2>
+			</div>
+            <div id="listHiddenItems"></div>
+		</div>
 		<script src="main.js"></script>
 	</body>
 </html>
